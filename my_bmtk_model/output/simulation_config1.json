@@ -46,8 +46,8 @@
     }
   },
   "network": "./circuit_config1.json",
-  "config_path": "C:\\Users\\Tyler\\Desktop\\BMTK Morpho Work\\bmtk-howto\\my_bmtk_model\\simulation_config1.json",
-  "config_dir": "C:\\Users\\Tyler\\Desktop\\BMTK Morpho Work\\bmtk-howto\\my_bmtk_model",
+  "config_path": "C:\\Users\\Tyler\\Desktop\\git_stage\\bmtk-howto\\my_bmtk_model\\simulation_config1.json",
+  "config_dir": "C:\\Users\\Tyler\\Desktop\\git_stage\\bmtk-howto\\my_bmtk_model",
   "components": {
     "morphologies_dir": "./biophys_components/morphologies",
     "synaptic_models_dir": "./biophys_components/synaptic_models",
