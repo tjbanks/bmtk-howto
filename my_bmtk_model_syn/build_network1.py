@@ -20,7 +20,7 @@ net1.add_nodes(N=1,
             
 
                         
-net1.add_edges(source={'cell_name': 'HCOCell1'}, target={'cell_name':'HCOCell2'},
+conn = net1.add_edges(source={'cell_name': 'HCOCell1'}, target={'cell_name':'HCOCell2'},
               connection_rule=1,
               syn_weight=40.0e-02,
               dynamics_params='my_inhsyn.json',
@@ -28,8 +28,9 @@ net1.add_edges(source={'cell_name': 'HCOCell1'}, target={'cell_name':'HCOCell2'}
               delay=0.0,
               target_sections=["soma"],
               distance_range=[0,999])
+conn.add_properties(['sec_id','sec_x'],rule=(0, 0.5), dtypes=[np.int32,np.float])
               
-net1.add_edges(source={'cell_name': 'HCOCell2'}, target={'cell_name':'HCOCell1'},
+conn = net1.add_edges(source={'cell_name': 'HCOCell2'}, target={'cell_name':'HCOCell1'},
               connection_rule=1,
               syn_weight=40.0e-02,
               dynamics_params='my_inhsyn.json',
@@ -37,6 +38,7 @@ net1.add_edges(source={'cell_name': 'HCOCell2'}, target={'cell_name':'HCOCell1'}
               delay=0.0,
               target_sections=["soma"],
               distance_range=[0,999])
+conn.add_properties(['sec_id','sec_x'],rule=(0, 0.5), dtypes=[np.int32,np.float])
 
 net1.build()
 net1.save_nodes(output_dir='network')             
