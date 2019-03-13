@@ -1,0 +1,3 @@
+node_type_id model_type cell_name morphology model_template
+100 biophysical HCOCell1 blank.swc hoc:HCOcell
+101 biophysical HCOCell2 blank.swc hoc:HCOcell
